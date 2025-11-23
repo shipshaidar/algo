@@ -9,7 +9,7 @@ def fast_expt(a: int, p: int) -> int:
     while p != 0:
         if (p % 2 == 0):
             p //= 2
-            a **= 2
+            a = a * a
         else:
             p -= 1
             s *= a
